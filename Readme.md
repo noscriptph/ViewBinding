@@ -1,4 +1,31 @@
-# Explorando un Ejemplo de Código en Android Studio 📱
+# Proyecto Android: Aplicación de Inicio de Sesión 📱
+
+Este proyecto es una aplicación de Android desarrollada en Android Studio que permite a los usuarios iniciar sesión utilizando un nombre de usuario y una contraseña predefinidos.
+
+## Instalación
+
+1. Clona este repositorio en tu máquina local.
+2. Abre el proyecto en Android Studio.
+3. Configura un emulador o conecta un dispositivo Android para ejecutar la aplicación.
+4. Ejecuta la aplicación desde Android Studio.
+
+## Funcionalidades
+
+- **Inicio de Sesión**: Los usuarios pueden ingresar su nombre de usuario y contraseña y hacer clic en un botón para iniciar sesión.
+- **Verificación de Permisos**: La aplicación verifica los permisos de ubicación del dispositivo antes de permitir el acceso.
+
+## Ejemplos de Código
+
+Aquí hay un ejemplo de cómo se realiza la verificación de permisos en la clase `MainActivity`:
+
+```kotlin
+if (permissions.isLocationOk(this)) {
+    println("Permisos de ubicación concedidos")
+} else {
+    println("Permisos de ubicación denegados")
+    permissions.requestLocationPermission(this)
+}
+```
 
 ### Contexto y Organización del Código:
 - Este repositorio contiene un caso de estudio de una aplicación desarrollada en Android Studio.
