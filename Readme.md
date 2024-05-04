@@ -1,6 +1,6 @@
 # Proyecto Android: Aplicación de Inicio de Sesión 📱
 
-[![Visitas](https://img.shields.io/badge/dynamic/json?label=Visitas&query=%24.value&url=https%3A%2F%2Fapi.countapi.xyz%2Fhit%2F%40noscriptph%2Fviewbinding)](https://github.com/noscriptph/ViewBinding)
+[![Visitas](https://api.countapi.xyz/hit/@noscriptph/ViewBinding)](https://github.com/noscriptph/ViewBinding)
 
 
 Este proyecto es una aplicación de Android desarrollada en Android Studio que permite a los usuarios iniciar sesión utilizando un nombre de usuario y una contraseña predefinidos.
