@@ -50,6 +50,26 @@ if (permissions.isLocationOk(this)) {
 - Se han agregado comentarios en el código para proporcionar explicaciones sobre el propósito y funcionamiento de cada sección.
 - Estos comentarios sirven como guía para otros desarrolladores que revisen o trabajen en el código en el futuro.
 
+### Operador '=='
+En Kotlin, el operador `==` se utiliza para comparar el contenido de dos objetos, mientras que el método `equals()` es una función de cualquier objeto que se utiliza para comparar la igualdad de dos objetos.
+
+En el código proporcionado, las comparaciones de cadenas se realizan utilizando el operador `==`, que en Kotlin se sobrecarga para llamar al método `equals()` internamente. Por lo tanto, en Kotlin, el uso de `==` es más idiomático y preferido para comparar el contenido de las cadenas, ya que es más conciso y legible que el uso explícito de `equals()`.
+
+Entonces, en Kotlin, puedes usar `==` para comparar cadenas y otros tipos de objetos cuando quieras verificar si sus contenidos son iguales. Por ejemplo:
+
+```kotlin
+val str1 = "hello"
+val str2 = "hello"
+
+if (str1 == str2) {
+    println("Las cadenas son iguales")
+} else {
+    println("Las cadenas son diferentes")
+}
+```
+
+Esto imprimirá "Las cadenas son iguales". Sin embargo, si necesitas verificar la igualdad de referencia, es decir, si dos variables se refieren al mismo objeto en la memoria, puedes usar el operador `===`.
+
 ### Recursos Adicionales:
 - Enlaces a diagramas útiles de Android Developer:
   - **Ciclo de vida de una actividad**: [Diagrama](https://developer.android.com/guide/components/activities/activity-lifecycle).
